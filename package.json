@@ -1,0 +1,56 @@
+{
+  "name": "premium-taste",
+  "version": "1.0.0",
+  "description": "Premium Taste — one-prompt senior UI for AI agents: brief, verify, jury.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Ian Gabriel D. Agujitas <iangabrielagujitas@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayangabryl/premium-taste.git"
+  },
+  "keywords": [
+    "design",
+    "ui",
+    "ai-agents",
+    "skills",
+    "frontend",
+    "verify",
+    "premium",
+    "cursor",
+    "claude-code"
+  ],
+  "bin": {
+    "premium-taste": "./dist/cli.js",
+    "premiumref": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "corpus",
+    "skill",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test",
+    "design": "bun run src/cli.ts design",
+    "verify": "bun run src/cli.ts verify",
+    "jury": "bun run src/cli.ts jury"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "playwright": "^1.51.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "bun-types": "^1.2.4",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.2"
+  }
+}

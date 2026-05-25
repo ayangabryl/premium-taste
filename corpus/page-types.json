@@ -1,0 +1,128 @@
+{
+  "pageTypes": [
+    {
+      "id": "hero",
+      "label": "Premium hero section",
+      "goal": "Above-the-fold moment that sells one idea — custom visual, intentional type, motion, interaction. NOT a template headline + gradient blob.",
+      "conceptQuestions": [
+        "What single visual metaphor represents this product in 5 seconds?",
+        "What does the user feel before they read the subcopy?",
+        "What is the ONE action after this hero?"
+      ],
+      "requiredElements": ["Display headline", "Supporting line (not paragraph essay)", "Primary CTA", "Visual anchor (not stock photo)"],
+      "layoutPatterns": ["Split asymmetric — copy left, visual right", "Type-led with ambient motion field", "Editorial overlap — type through visual plane", "Full-bleed visual with corner chrome"],
+      "techniqueIds": ["type-as-image", "generative-geometry", "editorial-asymmetry", "cinematic-hero", "scroll-choreography", "interactive-surface"],
+      "interactionDefaults": ["GSAP entrance stagger on hero load", "Pointer or scroll affects at least one visual layer", "CTA hover + focus-visible"],
+      "antiPatterns": [
+        "Centered Inter headline + purple gradient blob",
+        "Split SaaS hero: copy column + abstract orb/node visual",
+        "Pill CTA (border-radius 999px) as primary action",
+        "Syne / Space Grotesk / DM Sans / Plus Jakarta as display font",
+        "Buzzword copy: build faster, 10x, revolutionize, before the meeting ends",
+        "Three icon columns inside hero",
+        "Dot grid background",
+        "Stock undraw illustration",
+        "Metric strip under hero",
+        "Orbital node network SVG"
+      ],
+      "verifyProfile": "hero"
+    },
+    {
+      "id": "landing",
+      "label": "Premium landing section",
+      "goal": "Conversion section with art direction — not a feature grid template.",
+      "conceptQuestions": ["What story does this section tell in one glance?", "Why this layout and not a 3-column grid?"],
+      "requiredElements": ["Section headline", "Proof or visual", "CTA or next step"],
+      "layoutPatterns": ["Bento with intentional asymmetry", "Full-bleed type section", "Split narrative + visual"],
+      "techniqueIds": ["type-as-image", "editorial-asymmetry", "scroll-choreography", "cinematic-hero"],
+      "interactionDefaults": ["Scroll-driven reveal", "Hover states on interactive elements"],
+      "antiPatterns": ["Identical card grid", "Emoji feature icons", "Glassmorphism card stack"],
+      "verifyProfile": "creative"
+    },
+    {
+      "id": "404",
+      "label": "Creative 404 page",
+      "goal": "Memorable error moment — concept + assets + motion. Study senior creative bar.",
+      "conceptQuestions": ["What does 'not found' mean in this brand world?", "Why would someone remember this page?"],
+      "requiredElements": ["Clear error state", "Primary escape (home/back)", "Custom visual concept"],
+      "layoutPatterns": ["Type-as-image", "Editorial asymmetric", "Game board", "Generative geometry"],
+      "techniqueIds": ["type-as-image", "generative-geometry", "editorial-asymmetry", "cinematic-hero", "functional-play", "interactive-surface"],
+      "interactionDefaults": ["GSAP entrance + ambient", "Pointer or game interaction"],
+      "antiPatterns": ["Stock 404 clipart", "Centered icon + lorem", "Dot grid on dark bg"],
+      "verifyProfile": "404"
+    },
+    {
+      "id": "pricing",
+      "label": "Premium pricing section",
+      "goal": "Plans with typographic hierarchy and restraint — not SaaS template cards.",
+      "conceptQuestions": ["Which plan should the eye hit first?", "What makes this pricing feel designed not generated?"],
+      "requiredElements": ["Plan hierarchy", "One highlighted tier", "CTA per plan"],
+      "layoutPatterns": ["Type-led tier names", "Asymmetric featured plan", "Monochrome + one accent"],
+      "techniqueIds": ["type-as-image", "editorial-asymmetry", "scroll-choreography"],
+      "interactionDefaults": [
+        "Billing toggle with NumberFlow (or odometer) on price change — not textContent swap",
+        "Toggle segment pressed state + meta line sync",
+        "Focus states on CTAs",
+        "CTA hover/press micro-feedback"
+      ],
+      "antiPatterns": ["Three identical glass cards", "Purple checkmark lists", "Fake 'most popular' pill everywhere", "Serif tier titles or editorial display above billing toggle"],
+      "verifyProfile": "creative"
+    },
+    {
+      "id": "empty-state",
+      "label": "Premium empty state",
+      "goal": "Zero-data moment with personality — illustration or geometry, not sad folder icon.",
+      "conceptQuestions": ["What emotion when there's nothing here yet?", "What's the one action to fix it?"],
+      "requiredElements": ["Empty state message", "Primary action", "Visual personality"],
+      "layoutPatterns": ["Small illustration narrative", "Generative empty field", "Typographic only"],
+      "techniqueIds": ["illustration-narrative", "generative-geometry", "functional-play", "interactive-surface"],
+      "interactionDefaults": ["Subtle ambient motion", "Clear CTA path"],
+      "antiPatterns": ["Gray folder icon", "Lorem instructions", "Centered template only"],
+      "verifyProfile": "creative"
+    },
+    {
+      "id": "portfolio",
+      "label": "Personal portfolio",
+      "goal": "Quiet premium personal site — lists, whitespace, curated objects, one hover moment per section. NOT dark scrub hero.",
+      "conceptQuestions": [
+        "What three sections tell your story (experience, work, experiments)?",
+        "What is the ONE hover or expand moment visitors remember?",
+        "Why system UI or editorial type — not a template portfolio?"
+      ],
+      "requiredElements": ["Intro line or identity", "At least one list section", "Contact or elsewhere link", "One visual anchor (screenshot, bookshelf, preview)"],
+      "layoutPatterns": ["Narrow centered column", "List + right-aligned meta", "Featured work screenshot", "Bookshelf or experiment previews"],
+      "techniqueIds": ["editorial-lists", "hover-preview-panel", "bookshelf-carousel", "grain-atmosphere", "narrow-measure"],
+      "interactionDefaults": ["Hover preview or expand on one section", "Underline links — no pill CTAs", "Focus-visible states"],
+      "antiPatterns": [
+        "Dark split scrub hero as entire portfolio",
+        "Dark zinc developer console with lime accent",
+        "Custom cursor + grain canvas + glow stack",
+        "Density token demo as entire hero",
+        "Production front-end headline on black field",
+        "Gold on black template",
+        "Orb nodes and pill buttons",
+        "Forcing GSAP on every element",
+        "Three-column feature grid"
+      ],
+      "verifyProfile": "editorial",
+      "defaultTaste": "editorial"
+    },
+    {
+      "id": "auth",
+      "label": "Auth / OTP screen",
+      "goal": "Single-task focus — code entry with atmosphere that responds to input. NOT static wallpaper.",
+      "conceptQuestions": [
+        "What emotion at login — trust, speed, calm?",
+        "How does the background react when a digit is focused or filled?",
+        "What is the one escape path if code fails?"
+      ],
+      "requiredElements": ["Clear task title", "OTP or password inputs", "Helper line", "Focus + paste behavior"],
+      "layoutPatterns": ["Centered panel on atmospheric field", "Ghost inputs on dark", "Horizon glow or dither band"],
+      "techniqueIds": ["dither-atmosphere", "grain-atmosphere"],
+      "interactionDefaults": ["Focus digit shifts atmosphere", "Auto-advance between fields", "Ambient motion on background"],
+      "antiPatterns": ["Static full-page gradient with dead UI", "Hero marketing above the form", "Pill buttons", "No paste support", "Fraunces or editorial serif headline on login/checkout"],
+      "verifyProfile": "editorial",
+      "defaultTaste": "expressive"
+    }
+  ]
+}

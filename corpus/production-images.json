@@ -1,0 +1,91 @@
+{
+  "version": "1.0.0",
+  "license": "Unsplash License (free). Avoid Unsplash+ in production.",
+  "cdnTemplate": "https://images.unsplash.com/{photoId}?auto=format&fit={fit}&w={width}&q={quality}",
+  "categories": [
+    {
+      "id": "mouse-hero",
+      "match": ["mouse", "computer mouse", "wireless mouse", "gaming mouse", "peripheral", "input device"],
+      "role": "hero",
+      "aspect": "4:5",
+      "width": 2400,
+      "photos": [
+        {
+          "id": "white-mouse-minimal",
+          "photoId": "photo-1772531606450-0dd023c265d7",
+          "pageUrl": "https://unsplash.com/photos/LP3nV76f2TA",
+          "photographer": "Unsplash",
+          "alt": "White wireless mouse on white background, studio product shot",
+          "tags": ["product", "minimal", "studio", "wireless mouse"]
+        },
+        {
+          "id": "mouse-desk-flatlay",
+          "photoId": "photo-1652819804299-eea887780ca7",
+          "pageUrl": "https://unsplash.com/photos/uBfEf0339uI",
+          "photographer": "Unsplash",
+          "alt": "Close up of computer mouse and keyboard, minimal desk flatlay",
+          "tags": ["desk", "flatlay", "minimal", "tech product"]
+        }
+      ]
+    },
+    {
+      "id": "mouse-lifestyle",
+      "match": ["desk setup", "workspace", "home office", "creator desk"],
+      "role": "lifestyle",
+      "aspect": "16:9",
+      "width": 2800,
+      "photos": [
+        {
+          "id": "mouse-gear-flatlay",
+          "photoId": "photo-1700825238268-a29fb711e4dc",
+          "pageUrl": "https://unsplash.com/photos/ysPAI0TxQvI",
+          "photographer": "wtrsnvc",
+          "alt": "Computer mouse beside camera lens on matte surface",
+          "tags": ["gear", "desk", "photography", "accessories"]
+        },
+        {
+          "id": "mouse-packaging",
+          "photoId": "photo-1754330895458-0bb117ce54a5",
+          "pageUrl": "https://unsplash.com/photos/i2y3PusR2vY",
+          "photographer": "Andrey Matveev",
+          "alt": "Wireless mouse with packaging on blue surface",
+          "tags": ["hardware", "product", "retail"]
+        }
+      ]
+    },
+    {
+      "id": "hero-abstract",
+      "match": ["hero", "launch", "saas", "brand", "studio"],
+      "role": "atmosphere",
+      "aspect": "16:9",
+      "width": 2800,
+      "photos": [
+        {
+          "id": "dark-texture",
+          "photoId": "photo-1557683316-973673baf926",
+          "pageUrl": "https://unsplash.com/photos/nvxEKXduF7U",
+          "photographer": "Unsplash",
+          "alt": "Soft gradient mesh texture",
+          "tags": ["abstract", "texture", "dark"]
+        }
+      ]
+    },
+    {
+      "id": "architecture",
+      "match": ["architecture", "editorial", "premium", "portfolio"],
+      "role": "editorial",
+      "aspect": "3:4",
+      "width": 2000,
+      "photos": [
+        {
+          "id": "concrete-minimal",
+          "photoId": "photo-1487958449943-2429d8a662a2",
+          "pageUrl": "https://unsplash.com/photos/whOkBmC6URI",
+          "photographer": "Unsplash",
+          "alt": "Minimal concrete architecture",
+          "tags": ["architecture", "minimal", "structure"]
+        }
+      ]
+    }
+  ]
+}

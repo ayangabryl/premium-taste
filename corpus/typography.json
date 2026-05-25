@@ -1,0 +1,53 @@
+{
+  "principles": [
+    "Product/task UI (forms, checkout, pricing, auth) is sans-first — one sans family or sans + mono for digits",
+    "Editorial serif belongs on spectacle surfaces (404, hero type-as-image) — not on form labels or checkout headlines",
+    "Distinctive sans (Source Sans 3, IBM Plex Sans, Söhne-style grotesk) beats Inter/Geist template stacks",
+    "Hierarchy through weight, size, and tabular nums — not swapping to serif for 'premium feel'"
+  ],
+  "sansFirstPageTypes": ["auth", "pricing"],
+  "sansFirstKeywords": "payment|checkout|card form|billing form|credit card|pay with card|payment card",
+  "pageTypes": {
+    "auth": {
+      "direction": "Sans-first task UI — Source Sans 3, IBM Plex Sans, or similar distinctive sans (not Inter/Geist). Headline at product scale (1.25–1.75rem semibold), not magazine serif display. Mono optional for OTP digits only.",
+      "pairings": ["Source Sans 3", "IBM Plex Sans", "Suisse-style grotesk"],
+      "avoid": [
+        "Fraunces or Instrument Serif on form headline",
+        "Magazine-scale serif h1 on checkout",
+        "Serif on field labels or helper text"
+      ]
+    },
+    "pricing": {
+      "direction": "Sans-first plan UI — tier names and price in one sans stack. Large price via size/weight + tabular nums, not serif display. NumberFlow on toggle.",
+      "pairings": ["Source Sans 3", "IBM Plex Sans", "Neutral grotesk with optical sizing"],
+      "avoid": [
+        "Serif tier titles on SaaS pricing cards",
+        "Editorial display headline above a billing toggle"
+      ]
+    },
+    "landing": {
+      "direction": "Match product job — bento/marketing may use display contrast, but default sans body + sans or grotesk display unless concept is type-as-image.",
+      "pairings": ["Sans body + grotesk display", "Single sans family with weight scale"],
+      "avoid": ["Fraunces on every card title by default", "Serif headline + sans form mismatch without intent"]
+    },
+    "hero": {
+      "direction": "Display voice allowed — condensed grotesk, stretched sans, stencil, or intentional serif when type IS the visual. Still not Inter + purple blob.",
+      "pairings": ["Ultra-condensed grotesk", "Variable serif as image", "Monumental sans scale"],
+      "avoid": ["Inter at default h1 size", "Syne / Space Grotesk / DM Sans template pairing"]
+    },
+    "404": {
+      "direction": "Type-as-image courage — serif, grotesk, or monospace display OK when concept demands it. One voice, committed scale.",
+      "pairings": ["Architectural grotesk", "Stencil display", "Monospace counter labels"],
+      "avoid": ["Stock centered icon + lorem", "Normal-size Inter headline only"]
+    }
+  },
+  "productRules": [
+    {
+      "id": "payment-checkout",
+      "match": "payment|checkout|card form|billing form|credit card|pay with card|payment card",
+      "direction": "Sans-first checkout — form, headline, and card preview all sans. Product-scale title, tabular card number. No editorial serif headline.",
+      "avoid": ["Serif h1 on payment UI", "Fraunces on checkout for 'premium'"]
+    }
+  ],
+  "defaultCreative": "Choose type for product voice — sans-first for task UI; display serif only when type IS the concept (404/hero)."
+}

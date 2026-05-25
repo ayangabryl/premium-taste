@@ -1,0 +1,64 @@
+{
+  "version": "1.0.0",
+  "providers": {
+    "svg": {
+      "custom": {
+        "note": "Draw inline SVG or trace one path for the product metaphor. Must read at a glance — no stock icon drop-in."
+      }
+    },
+    "lottie": {
+      "library": "lottiefiles",
+      "embed": "dotlottie-wc",
+      "searchTemplate": "https://lottiefiles.com/search?q={query}",
+      "note": "Prefer stroke/minimal loops tied to state (unlock on valid input). Fallback to SVG stroke-draw if no fit."
+    },
+    "image": {
+      "unsplash": {
+        "searchTemplate": "https://unsplash.com/s/photos/{query}",
+        "license": "Unsplash License — attribute photographer in production",
+        "note": "Hero/editorial only. Auth and task screens usually skip stock photos."
+      },
+      "aura": {
+        "searchTemplate": "https://aura.build/assets?tag={query}",
+        "license": "Aura Assets — check page terms",
+        "note": "Abstract backgrounds, portraits, architecture for marketing surfaces."
+      }
+    }
+  },
+  "pageDefaults": {
+    "auth": {
+      "prefer": ["svg", "lottie"],
+      "avoid": ["stock hero photo", "clipart"],
+      "metaphors": ["lock-closed", "key", "shield-check", "envelope"]
+    },
+    "hero": {
+      "prefer": ["image", "svg", "lottie"],
+      "avoid": ["icon-only hero"],
+      "metaphors": ["abstract", "product", "architecture"]
+    },
+    "404": {
+      "prefer": ["svg", "lottie"],
+      "avoid": ["sad face clipart"],
+      "metaphors": ["compass", "void", "signal"]
+    },
+    "portfolio": {
+      "prefer": ["image", "svg"],
+      "avoid": ["gradient blob"],
+      "metaphors": ["work", "craft", "editorial"]
+    },
+    "pricing": {
+      "prefer": ["svg"],
+      "avoid": ["orbital nodes"],
+      "metaphors": ["balance", "tier", "signal"]
+    }
+  },
+  "keywordMetaphors": [
+    { "match": ["reset", "password", "new key", "recover"], "icons": ["key"], "lottieQueries": ["key unlock", "lock unlock minimal"], "imageTags": [] },
+    { "match": ["login", "sign in", "sign-in", "gate"], "icons": ["lock-closed"], "lottieQueries": ["lock", "login secure"], "imageTags": [] },
+    { "match": ["otp", "code", "verify", "2fa", "mfa"], "icons": ["shield-check"], "lottieQueries": ["otp", "verification code"], "imageTags": [] },
+    { "match": ["email", "inbox", "mail", "link"], "icons": ["envelope"], "lottieQueries": ["email sent", "envelope"], "imageTags": [] },
+    { "match": ["hero", "launch", "studio", "brand"], "icons": [], "lottieQueries": ["abstract loop minimal"], "imageTags": ["dark abstract texture", "architecture minimal"] },
+    { "match": ["404", "not found", "lost"], "icons": [], "lottieQueries": ["404 minimal", "empty void"], "imageTags": ["abstract dark void"] },
+    { "match": ["mouse", "computer mouse", "wireless mouse", "peripheral", "input device", "hardware product"], "icons": [], "lottieQueries": [], "imageTags": ["computer mouse product photography", "minimal desk setup"] }
+  ]
+}

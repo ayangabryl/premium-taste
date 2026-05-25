@@ -1,0 +1,58 @@
+{
+  "principles": [
+    {
+      "id": "state-feedback",
+      "rule": "Every state change the user triggers should have visible feedback — toggle, price change, hover, focus."
+    },
+    {
+      "id": "number-morph",
+      "rule": "Prices, counts, and metrics morph smoothly — use NumberFlow (@number-flow/react or number-flow vanilla), not textContent swaps."
+    },
+    {
+      "id": "motion-budget",
+      "rule": "Micro only: 150–400ms for UI state, ease-out. Respect prefers-reduced-motion (instant swap, animated=false)."
+    },
+    {
+      "id": "layered-motion",
+      "rule": "Stack small motions: billing pill slide + digit spin + meta fade + material hue shift — not one giant GSAP timeline."
+    },
+    {
+      "id": "stable-hover",
+      "rule": "Premium hover does NOT move layout — no translateY lift on buttons, no translateX nudge on rows. Use color, opacity, background tint, or shadow depth only."
+    }
+  ],
+  "antiPatterns": [
+    "translateY(-1px) button lift — cheap SaaS template, causes layout shift",
+    "translateX row slide on list hover — feels jittery on pricing cards",
+    "scale(1.02) on cards — shifts surrounding content",
+    "Hover that changes padding or margin",
+    "Magnetic cursor or bounce easing on task UI"
+  ],
+  "byContext": {
+    "pricing": {
+      "mustHave": [
+        "Animated price on billing toggle (NumberFlow or equivalent odometer)",
+        "Toggle segment with pressed state + subtle transition",
+        "Meta line updates in sync with price (opacity crossfade ok)",
+        "CTA hover: background + shadow depth only — no translateY lift",
+        "Optional: feature row background tint — no slide/transform"
+      ],
+      "planCardLayout": [
+        "Tier title needs top breathing room inside header band — not glued to card edge",
+        "Billing toggle needs top padding after header seam — not flush to body top",
+        "Single plan cards: Monthly before Annual in toggle order (Annual is alternate/savings)"
+      ],
+      "libraries": {
+        "vanilla": "https://esm.sh/number-flow — number-flow.update(n), respectMotionPreference",
+        "react": "@number-flow/react — <NumberFlow value={price} />",
+        "vue": "@number-flow/vue"
+      }
+    },
+    "dashboard": {
+      "mustHave": ["Metric cards use number morph on filter change", "Chart hover crosshair feedback"]
+    },
+    "default": {
+      "mustHave": ["Focus-visible on all controls", "Stable hover — color/opacity/tint, no layout-shift transforms"]
+    }
+  }
+}

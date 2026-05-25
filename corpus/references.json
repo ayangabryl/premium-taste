@@ -1,0 +1,370 @@
+{
+  "source": "Curated creative 404 reference corpus",
+  "description": "Curated creative 404 references — study technique breakdowns, not surface clones",
+  "taxonomies": {
+    "style": [
+      "3D",
+      "Bold",
+      "Brutalist",
+      "Colorful",
+      "Dark",
+      "Editorial",
+      "Glitchy",
+      "Hand-drawn",
+      "Illustrative",
+      "Large Type",
+      "Light",
+      "Minimal",
+      "Photographic",
+      "Playful",
+      "Retro",
+      "Typographic"
+    ],
+    "interaction": [
+      "Animated",
+      "Custom Cursor",
+      "Game",
+      "Hover Effects",
+      "Interactive",
+      "Scroll-driven"
+    ]
+  },
+  "references": [
+    {
+      "id": "iyo",
+      "name": "iyO",
+      "tags": {
+        "style": [
+          "Dark",
+          "Minimal",
+          "Typographic"
+        ],
+        "interaction": [
+          "Animated",
+          "Interactive"
+        ]
+      },
+      "concept": "404 emerges from concentric circle segments — mathematical moiré, not a typed numeral",
+      "typography": "Small brand wordmark below graphic; poetic microcopy in light sans — type supports geometry, not hero",
+      "layoutPattern": "Centered stage BUT the hero IS generative geometry — not icon + headline template",
+      "fonts": [
+        "Custom geometric sans wordmark",
+        "Neutral sans body ~14px"
+      ],
+      "techniques": [
+        "SVG/canvas segment masking",
+        "Opacity moiré forming digits",
+        "Concentric ring math"
+      ],
+      "assetRequirements": [
+        "Build 404 from circle segments with varying stroke/opacity — NOT border-radius div rings",
+        "Generative or SVG path segments that form digits when combined"
+      ],
+      "stealList": [
+        "404 as emergent pattern from geometry",
+        "Poetic product copy tied to brand metaphor",
+        "Motion on the pattern itself"
+      ],
+      "avoidList": [
+        "Plain CSS border circles pretending to be iyO",
+        "Helvetica-only stack",
+        "Generic centered 404 headline"
+      ],
+      "motion": "GSAP: stagger segment opacity; pulse rings; optional cursor-linked distortion",
+      "interaction": "Cursor-influenced ring distortion or segment reveal",
+      "premiumBecause": [
+        "Single strong metaphor",
+        "Motion IS the typography",
+        "No template grid bg"
+      ],
+      "notOneShot": "Segment geometry → moiré lockup → GSAP timeline → cursor interaction"
+    },
+    {
+      "id": "maxima",
+      "name": "Maxima",
+      "tags": {
+        "style": [
+          "Colorful",
+          "Playful",
+          "Illustrative"
+        ],
+        "interaction": [
+          "Animated",
+          "Custom Cursor"
+        ]
+      },
+      "concept": "Playful search narrative — illustrated character with binoculars, oversized 404 type",
+      "typography": "Bold rounded display numerals + friendly sans; illustration carries personality",
+      "layoutPattern": "Character + type composition with intentional overlap and sky/ground layers",
+      "fonts": [
+        "Rounded display numerals",
+        "Friendly sans body"
+      ],
+      "techniques": [
+        "Custom illustration system",
+        "Layered scene (clouds, character, type)",
+        "Palette cohesion"
+      ],
+      "assetRequirements": [
+        "Original illustration or cohesive scene — not stock clipart",
+        "Character with idle/float animation target",
+        "Cloud/background layers"
+      ],
+      "stealList": [
+        "Illustration-led narrative",
+        "404 numerals integrated into scene scale",
+        "Warm cohesive palette"
+      ],
+      "avoidList": [
+        "Emoji icons",
+        "Generic undraw-style flat people",
+        "Centered text-only hero"
+      ],
+      "motion": "GSAP: float clouds, character idle, staggered 404 entrance",
+      "interaction": "Custom cursor; hover on character or CTA",
+      "premiumBecause": [
+        "Custom illustration system",
+        "Cohesive palette",
+        "Personality without buzzwords"
+      ],
+      "notOneShot": "Illustration pass → layout → character animation → cursor polish"
+    },
+    {
+      "id": "maxime-ducret-tilt",
+      "name": "Maxime Ducret — TILT 404",
+      "tags": {
+        "style": [
+          "Minimal",
+          "Brutalist"
+        ],
+        "interaction": [
+          "Game",
+          "Interactive"
+        ]
+      },
+      "concept": "404 as playable tilt puzzle — error becomes engagement",
+      "typography": "Architectural grotesk; NOT FOUND + 404 hierarchy; move counter as UI chrome",
+      "layoutPattern": "Game board centered; chrome in corners; monochrome discipline",
+      "fonts": [
+        "Grotesk display",
+        "Monospace counter labels"
+      ],
+      "techniques": [
+        "Canvas or DOM tile game",
+        "State machine (moves, win, restart)",
+        "Keyboard controls"
+      ],
+      "assetRequirements": [
+        "Working tilt/slide puzzle logic",
+        "Move counter that updates",
+        "RESTART control"
+      ],
+      "stealList": [
+        "404 as functional game",
+        "Utility while lost",
+        "Monochrome + one accent max"
+      ],
+      "avoidList": [
+        "Fake game UI without logic",
+        "Decorative game screenshots",
+        "Purple gradient chrome"
+      ],
+      "motion": "GSAP: physics-like tile movement; restart transitions",
+      "interaction": "Keyboard/button controls; move counter; win state",
+      "premiumBecause": [
+        "Functional interaction",
+        "Concept matches copy",
+        "Monochrome discipline"
+      ],
+      "notOneShot": "Game logic first → minimal UI → motion polish → tutorial copy"
+    },
+    {
+      "id": "follow-art",
+      "name": "Follow.Art",
+      "tags": {
+        "style": [
+          "Bold",
+          "Colorful",
+          "Large Type",
+          "Playful"
+        ],
+        "interaction": [
+          "Animated"
+        ]
+      },
+      "concept": "PAGE NOT FOUND as monumental type filling viewport + hand-drawn X texture overlay",
+      "typography": "Ultra-condensed stretched display — type IS the image; nav tiny by contrast",
+      "layoutPattern": "Full-bleed color field; type at extreme scale; CTA corner-placed not centered",
+      "fonts": [
+        "Ultra-condensed grotesk display",
+        "Small caps nav sans"
+      ],
+      "techniques": [
+        "Type at viewport scale",
+        "Hand-drawn/painterly texture overlay",
+        "Single bold color field"
+      ],
+      "assetRequirements": [
+        "Display type large enough to dominate frame (not normal h1 size)",
+        "Textured X mark — SVG stroke draw or raster texture",
+        "CTA in corner with sharp edges"
+      ],
+      "stealList": [
+        "Type-as-image at extreme scale",
+        "Texture contrast on letterforms",
+        "One saturated color field"
+      ],
+      "avoidList": [
+        "Normal-sized 404 headline",
+        "Centered pill button",
+        "Gradient backgrounds"
+      ],
+      "motion": "GSAP: X draw-on or texture reveal; type scale entrance",
+      "interaction": "CTA hover; optional cursor follow on X",
+      "premiumBecause": [
+        "Art direction over template",
+        "Texture contrast",
+        "One bold color field"
+      ],
+      "notOneShot": "Type lockup → texture asset → entrance timeline"
+    },
+    {
+      "id": "missing-element",
+      "name": "The Missing Element",
+      "tags": {
+        "style": [
+          "Dark",
+          "Photographic",
+          "Editorial"
+        ],
+        "interaction": [
+          "Animated",
+          "Interactive"
+        ]
+      },
+      "concept": "Off the map — cinematic jellyfish in deep sea; poetic bilingual copy",
+      "typography": "Stencil/block display OFF THE MAP; monospaced metadata in corners; Italian body",
+      "layoutPattern": "Asymmetric editorial — corners hold metadata; hero type overlaps photo subject",
+      "fonts": [
+        "Stencil or block display",
+        "Monospace metadata",
+        "Poetic serif or sans body"
+      ],
+      "techniques": [
+        "Photo or cinematic asset",
+        "Corner metadata system",
+        "Subject overlaps type",
+        "Ghost border CTA"
+      ],
+      "assetRequirements": [
+        "Cinematic hero asset (photo-grade or detailed SVG)",
+        "Corner coordinate/metadata labels",
+        "Asymmetric type placement — not centered stack"
+      ],
+      "stealList": [
+        "Editorial asymmetry",
+        "Poetic copy in brand voice",
+        "Subject passes through typography plane"
+      ],
+      "avoidList": [
+        "Centered hero stack",
+        "Lorem ipsum",
+        "Dot grid overlay on dark bg"
+      ],
+      "motion": "GSAP: particle drift, jellyfish float, subtle parallax",
+      "interaction": "Hover on CTA frame; ambient motion loop",
+      "premiumBecause": [
+        "Cinematic photo + type",
+        "Asymmetric layout",
+        "Mood-first"
+      ],
+      "notOneShot": "Asset grade → layout → ambient loop → CTA states"
+    },
+    {
+      "id": "corentin-bernadou",
+      "name": "Corentin Bernadou",
+      "tags": {
+        "style": [
+          "Bold",
+          "Large Type",
+          "Minimal",
+          "Playful"
+        ],
+        "interaction": [
+          "Animated"
+        ]
+      },
+      "concept": "Bold typographic 404 — type scale as the entire experience",
+      "typography": "Oversized display, minimal supporting text",
+      "layoutPattern": "Type-led; whitespace as design",
+      "fonts": [
+        "Oversized grotesk or serif display"
+      ],
+      "techniques": [
+        "Type scale reveal",
+        "Tracking/weight shift"
+      ],
+      "assetRequirements": [
+        "404 at portfolio-appropriate scale",
+        "Minimal chrome"
+      ],
+      "stealList": [
+        "Type-led restraint",
+        "Portfolio-appropriate personality"
+      ],
+      "avoidList": [
+        "Feature grid below hero",
+        "Stock illustration"
+      ],
+      "motion": "GSAP: type reveal, weight or tracking shift",
+      "interaction": "Hover on letterforms or CTA",
+      "premiumBecause": [
+        "Portfolio-appropriate restraint",
+        "Type-led art direction"
+      ],
+      "notOneShot": "Type scale lockup → GSAP reveal → hover polish"
+    },
+    {
+      "id": "webinspoo",
+      "name": "Webinspoo",
+      "tags": {
+        "style": [
+          "Dark",
+          "Minimal"
+        ],
+        "interaction": [
+          "Game",
+          "Interactive"
+        ]
+      },
+      "concept": "404 tilt game variant — architectural error page",
+      "typography": "Swiss minimal labels + move counter",
+      "layoutPattern": "Game board + minimal chrome",
+      "fonts": [
+        "Swiss grotesk",
+        "Monospace counter"
+      ],
+      "techniques": [
+        "Tile game",
+        "Keyboard nav"
+      ],
+      "assetRequirements": [
+        "Functional puzzle",
+        "Move counter"
+      ],
+      "stealList": [
+        "Utility while lost"
+      ],
+      "avoidList": [
+        "Decorative-only UI"
+      ],
+      "motion": "GSAP tile physics",
+      "interaction": "LEFT/RIGHT/RESTART controls",
+      "premiumBecause": [
+        "Utility while lost",
+        "Zero decoration slop"
+      ],
+      "notOneShot": "Same as game 404 pattern"
+    }
+  ]
+}

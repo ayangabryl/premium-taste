@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.premium-taste/
+.premiumref/
+.DS_Store
+*.log
+.playwright/

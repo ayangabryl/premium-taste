@@ -1,0 +1,52 @@
+{
+  "principles": [
+    {
+      "id": "reduction",
+      "name": "Reduction",
+      "question": "What can you remove until the screen still works?",
+      "applyTo": ["hero", "auth", "404", "landing", "pricing", "portfolio", "empty-state"]
+    },
+    {
+      "id": "interaction-with-purpose",
+      "name": "Interaction with purpose",
+      "question": "What changes when the user acts — and does it serve the job, not decoration?",
+      "applyTo": ["hero", "auth", "404", "landing", "portfolio", "empty-state"]
+    },
+    {
+      "id": "atmosphere-responds",
+      "name": "Atmosphere responds",
+      "question": "How does the environment react to focus, progress, or state — not sit as wallpaper?",
+      "applyTo": ["auth", "hero", "empty-state"]
+    },
+    {
+      "id": "type-as-structure",
+      "name": "Type as structure",
+      "question": "How does typography carry hierarchy without extra chrome?",
+      "applyTo": ["hero", "404", "pricing", "landing", "portfolio"]
+    },
+    {
+      "id": "one-color-world",
+      "name": "One color world",
+      "question": "What is the one committed color field or material — and why this product?",
+      "applyTo": ["hero", "404", "landing", "pricing"]
+    },
+    {
+      "id": "quiet-editorial",
+      "name": "Quiet editorial",
+      "question": "Where does whitespace and list rhythm do the selling?",
+      "applyTo": ["portfolio", "landing", "pricing"]
+    },
+    {
+      "id": "product-proves-itself",
+      "name": "Product proves itself",
+      "question": "How does the UI show the product working — not describe it?",
+      "applyTo": ["landing", "hero"]
+    },
+    {
+      "id": "task-clarity",
+      "name": "Task clarity",
+      "question": "Can a tired user complete this in one pass without hunting?",
+      "applyTo": ["auth", "empty-state", "pricing"]
+    }
+  ]
+}

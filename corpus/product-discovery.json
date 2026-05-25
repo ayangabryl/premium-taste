@@ -1,0 +1,80 @@
+{
+  "universal": [
+    {
+      "id": "user-moment",
+      "prompt": "What is the user doing in the 10 seconds before this screen appears?",
+      "blocksConceptUntilAnswered": true
+    },
+    {
+      "id": "job-to-be-done",
+      "prompt": "What single job must this screen complete — in one verb?",
+      "blocksConceptUntilAnswered": true
+    },
+    {
+      "id": "brand-voice",
+      "prompt": "If this product were a person, how do they speak — not how they look?",
+      "blocksConceptUntilAnswered": false
+    },
+    {
+      "id": "differentiation",
+      "prompt": "What must this NOT remind users of? (competitors, templates, references you studied)",
+      "blocksConceptUntilAnswered": true
+    },
+    {
+      "id": "state-change",
+      "prompt": "When the user clicks or toggles, what specifically moves or morphs? (price digits, meta fade, row hover — name each micro-interaction)",
+      "blocksConceptUntilAnswered": true
+    },
+    {
+      "id": "originality",
+      "prompt": "Finish honestly: \"This looks like ___ with different copy.\" If you can name it, reject and restart.",
+      "blocksConceptUntilAnswered": true
+    }
+  ],
+  "byPageType": {
+    "auth": [
+      {
+        "id": "trust-speed",
+        "prompt": "Should this moment feel trust, speed, or calm — and why for THIS product?"
+      },
+      {
+        "id": "failure-path",
+        "prompt": "What happens when the code is wrong? One clear escape."
+      }
+    ],
+    "portfolio": [
+      {
+        "id": "remember-one",
+        "prompt": "What is the ONE thing a visitor should remember after 30 seconds?"
+      }
+    ],
+    "hero": [
+      {
+        "id": "five-second",
+        "prompt": "What single idea lands in 5 seconds before anyone reads subcopy?"
+      }
+    ],
+    "404": [
+      {
+        "id": "error-meaning",
+        "prompt": "What does 'not found' mean in this brand's world — not generically?"
+      }
+    ],
+    "pricing": [
+      {
+        "id": "featured-tier",
+        "prompt": "Which plan should the eye hit first — and is that honest for the business?"
+      },
+      {
+        "id": "price-morph",
+        "prompt": "Billing toggle changes the price — will digits morph with NumberFlow, or will you swap text? (Must morph.)"
+      }
+    ],
+    "landing": [
+      {
+        "id": "conversion-story",
+        "prompt": "What story does this section tell in one glance — without a feature grid?"
+      }
+    ]
+  }
+}

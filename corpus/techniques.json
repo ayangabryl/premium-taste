@@ -1,0 +1,171 @@
+{
+  "techniques": [
+    {
+      "id": "type-as-image",
+      "name": "Type as image",
+      "applyTo": ["hero", "landing", "404", "pricing"],
+      "description": "Display type at extreme scale — typography IS the visual anchor, not a label above an illustration",
+      "stealList": ["Monumental headline scale", "Tiny nav/chrome by contrast", "Type placement breaks the grid"],
+      "assetHints": ["Stacked or stretched display words", "Texture overlay on letterforms optional"],
+      "motionHints": ["Word stagger reveal", "Tracking or weight shift on load"]
+    },
+    {
+      "id": "generative-geometry",
+      "name": "Generative geometry",
+      "applyTo": ["hero", "404", "empty-state"],
+      "description": "Visual built from math/SVG/canvas — rings, segments, fields — not stock illustrations",
+      "stealList": ["Pattern emerges from rules", "Motion on the geometry itself", "Single metaphor in the structure"],
+      "assetHints": ["SVG segments", "Canvas fields", "Concentric or modular shapes"],
+      "motionHints": ["Opacity/pulse loops", "Cursor-linked distortion"]
+    },
+    {
+      "id": "editorial-asymmetry",
+      "name": "Editorial asymmetry",
+      "applyTo": ["hero", "landing", "404"],
+      "description": "Corners, offsets, overlap — magazine layout energy, not bootstrap center stack",
+      "stealList": ["Metadata in corners", "Subject overlaps type plane", "CTA off-center"],
+      "assetHints": ["Corner labels", "Split grid", "Intentional negative space"],
+      "motionHints": ["Parallax layers", "Stagger by region not center-out"]
+    },
+    {
+      "id": "cinematic-hero",
+      "name": "Cinematic hero asset",
+      "applyTo": ["hero", "landing", "404"],
+      "description": "Photo-grade or detailed illustrated scene sets mood — type interacts with the scene",
+      "stealList": ["Mood before features", "Copy is poetic or sharp — not buzzwords", "Asset grade matches premium bar"],
+      "assetHints": ["Full-bleed or framed hero image", "Detailed SVG scene", "Light/shadow depth"],
+      "motionHints": ["Ambient drift", "Slow scale or parallax"]
+    },
+    {
+      "id": "scroll-choreography",
+      "name": "Scroll choreography",
+      "applyTo": ["hero", "landing", "pricing"],
+      "description": "Hero hands off to page via ScrollTrigger — not a static poster above the fold",
+      "stealList": ["Entrance on load + scroll-linked act two", "Pinned hero moment", "Progressive disclosure"],
+      "assetHints": ["ScrollTrigger targets", "Layered sections"],
+      "motionHints": ["scrubbed transforms", "Pin + fade handoff"]
+    },
+    {
+      "id": "interactive-surface",
+      "name": "Interactive surface",
+      "applyTo": ["hero", "404", "empty-state"],
+      "description": "Pointer, drag, or game input changes the visual — product feels alive",
+      "stealList": ["Cursor affects visuals", "Hover with purpose", "Keyboard path for primary action"],
+      "assetHints": ["Custom cursor", "Magnetic CTA", "Canvas/game layer"],
+      "motionHints": ["Micro-interaction on pointer move", "GSAP quickTo on cursor"]
+    },
+    {
+      "id": "illustration-narrative",
+      "name": "Illustration narrative",
+      "applyTo": ["hero", "404", "landing"],
+      "description": "Custom character or scene tells the story — cohesive palette, not clipart",
+      "stealList": ["One illustration system", "Character idle motion", "Palette discipline"],
+      "assetHints": ["Original SVG illustration", "Layered scene parts"],
+      "motionHints": ["Float/y idle loops", "Staggered scene entrance"]
+    },
+    {
+      "id": "functional-play",
+      "name": "Functional play",
+      "applyTo": ["404", "empty-state", "hero"],
+      "description": "Playable moment — puzzle, tilt, drag — engagement without decoration",
+      "stealList": ["State that updates", "Utility while waiting", "Monochrome discipline"],
+      "assetHints": ["Game board", "Move counter", "Restart flow"],
+      "motionHints": ["Tile physics", "Win/reset transitions"]
+    },
+    {
+      "id": "editorial-lists",
+      "name": "Editorial lists",
+      "applyTo": ["portfolio", "landing", "hero"],
+      "description": "Experience / artifacts / experiments as clean rows — title left, meta right, generous vertical rhythm",
+      "stealList": ["Right-aligned dates or view links", "Section label with personality", "Fade inactive rows on hover focus"],
+      "assetHints": ["List row component", "Section header accent font", "Meta column alignment"],
+      "motionHints": ["Opacity shift on row hover", "Preview panel fade in"]
+    },
+    {
+      "id": "hover-preview-panel",
+      "name": "Hover preview panel",
+      "applyTo": ["portfolio", "landing", "hero"],
+      "description": "Floating card preview on list hover — project screenshot, shader, or demo UI",
+      "stealList": ["Rounded preview card", "Soft shadow + grain", "One preview at a time", "Position near hovered row"],
+      "assetHints": ["Project screenshot or live demo frame", "Rounded-2xl container", "Subtle backdrop blur optional"],
+      "motionHints": ["Opacity + translate on hover", "Reduced motion: instant show/hide"]
+    },
+    {
+      "id": "bookshelf-carousel",
+      "name": "Bookshelf carousel",
+      "applyTo": ["portfolio", "landing"],
+      "description": "Horizontal book spines or curated objects — one expands on hover",
+      "stealList": ["Spine-only default state", "Cover expand on hover", "Real titles / influences", "Soft drop shadow under shelf"],
+      "assetHints": ["Book spine images or CSS spines", "Expand width transition", "Shelf baseline alignment"],
+      "motionHints": ["Width expand on hover", "Stagger optional on load"]
+    },
+    {
+      "id": "grain-atmosphere",
+      "name": "Grain atmosphere",
+      "applyTo": ["portfolio", "hero", "landing", "404"],
+      "description": "Subtle noise on gradients or dark surfaces — tactile premium, not flat digital",
+      "stealList": ["SVG noise or CSS grain overlay", "Soft gradient horizon", "One atmospheric surface"],
+      "assetHints": ["feTurbulence or noise PNG", "Low opacity overlay", "Gradient + grain combo"],
+      "motionHints": ["Static grain OK", "Slow gradient shift optional"]
+    },
+    {
+      "id": "narrow-measure",
+      "name": "Narrow measure",
+      "applyTo": ["portfolio", "landing", "pricing"],
+      "description": "Content column ~36–42rem centered — margins do the design work",
+      "stealList": ["max-width 36–42rem", "Vertical rhythm 1.5–2.5rem between blocks", "No full-bleed text"],
+      "assetHints": ["Centered main column", "Wide viewport margins"],
+      "motionHints": ["Scroll is calm — no parallax required"]
+    },
+    {
+      "id": "dither-atmosphere",
+      "name": "Dither atmosphere",
+      "applyTo": ["hero", "landing", "portfolio", "empty-state", "auth"],
+      "description": "Bayer dither + smooth glow underneath — field breathes and responds to focus, not static wallpaper.",
+      "stealList": [
+        "4px Bayer cells over soft gradient depth",
+        "Horizon band shifts on digit focus / fill",
+        "Slow ambient wave on field",
+        "Hue follows interaction state"
+      ],
+      "assetHints": ["Canvas Bayer dither field", "CSS glow layer", "setHue + setFocus API"],
+      "motionHints": ["rAF ambient drift", "Re-render on focus change", "Reduced motion: static last frame"]
+    },
+    {
+      "id": "monochrome-discipline",
+      "name": "Monochrome discipline",
+      "applyTo": ["portfolio", "landing", "pricing", "hero"],
+      "description": "Black/white/one gray — color only when it means something",
+      "stealList": ["Paper + ink palette", "One accent max", "Links as underline not pills"],
+      "assetHints": ["CSS custom properties for ink/paper", "No gradient heroes"],
+      "motionHints": ["Opacity transitions only"]
+    },
+    {
+      "id": "blueprint-grid",
+      "name": "Blueprint grid",
+      "applyTo": ["landing", "hero", "pricing"],
+      "description": "Visible grid lines and hatch corners — structure IS the brand (Tailwind-style)",
+      "stealList": ["Vertical/horizontal rules", "Diagonal hatch in corners", "Section dividers as grid", "Near-black + one accent"],
+      "assetHints": ["CSS linear-gradient grid", "1px border system", "Rotated section labels"],
+      "motionHints": ["Grid fades in on load", "Optional subtle line draw"]
+    },
+    {
+      "id": "code-live-preview",
+      "name": "Code + live preview",
+      "applyTo": ["landing", "hero"],
+      "description": "Split panel — code on left, rendered output on right. Product proves the headline.",
+      "stealList": ["Syntax-highlighted snippet", "Preview card matches code", "Window chrome on editor"],
+      "assetHints": ["Two-column grid", "Shared state highlight"],
+      "motionHints": ["Highlight sync on hover", "Stagger entrance code then preview"]
+    },
+    {
+      "id": "meta-labels",
+      "name": "Meta labels",
+      "applyTo": ["landing", "hero", "pricing"],
+      "description": "Tiny labels showing tokens/classes used — self-documenting UI",
+      "stealList": ["text-6xl above headline", "Mono micro type", "Teaches system while you read"],
+      "assetHints": ["Absolute positioned meta", "Muted color, small size"],
+      "motionHints": ["Fade in before main type"]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "detectPatterns": "redesign|restyle|revamp|re-do|redo this|upgrade this|polish this|make this premium|make this look|not look like ai|with a photo|with this photo|using a photo|using this photo|attached photo|attached image|this screenshot|from the screenshot|with the image",
+  "expansion": "High-quality redesign of existing UI in this project — preserve routes, data flow, and core copy intent; upgrade typography hierarchy, semantic color tokens, spacing, material (photo as intentional anchor not wallpaper), one interaction moment; edit the real files, do not spawn a duplicate template page",
+  "locateTarget": [
+    "Find the page or component the user means — open file, route, @-mention, or grep project for matching path/component name",
+    "If ambiguous, check app router (app/, pages/, src/routes/), index.html, or the file they have focused — ask only when two equally likely targets",
+    "Read the current implementation fully before changing anything"
+  ],
+  "photoHandling": [
+    "User attached image → save or reference under project public/, assets/, or .premiumref/assets/ with a stable local path",
+    "User said 'with a photo' but none attached → search project for images (public/, assets/, static/, *.webp, *.jpg) or ask once for path",
+    "Photo is visual anchor — hero, card media, avatar, or section background in ONE bounded zone — not full-page blur wallpaper",
+    "Use object-fit, aspect-ratio, and crop with intent; add alt text; prefer local paths over hotlinked URLs"
+  ],
+  "preserve": [
+    "Same URL/route and primary user job after redesign",
+    "Existing content structure unless user asked to rewrite copy",
+    "Working forms, links, and navigation — upgrade craft, don't break behavior"
+  ],
+  "upgrade": [
+    "Semantic CSS color tokens (--surface, --ink, --muted, --accent)",
+    "Typographic hierarchy — display/price/headline vs quiet meta",
+    "Spacing and alignment — senior product rhythm, not tighter template padding",
+    "One material moment — mesh band, photo frame, soft elevation — tied to the photo if provided",
+    "One meaningful micro-interaction (hover, toggle, preview) where appropriate",
+    "Remove template slop — purple blobs, icon grids, cursor stacks, em-dash copy"
+  ],
+  "documentIn": ".premiumref/discovery.md",
+  "documentSections": [
+    "## Redesign target — file(s) and route",
+    "## What we keep",
+    "## What we upgrade",
+    "## Photo / asset path used",
+    "## Before → after intent (one paragraph)"
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "principles": [
+    {
+      "id": "one-material",
+      "rule": "One committed color field or material per surface — mesh header band, gradient type, ink on paper. Not rainbow sections."
+    },
+    {
+      "id": "tinted-neutrals",
+      "rule": "Neutrals are tinted (warm or cool gray), not pure #fff/#000. Use 3–5 semantic steps: surface, ink, muted, border, accent."
+    },
+    {
+      "id": "hierarchy-by-value",
+      "rule": "Hierarchy through value first (ink vs muted), then one accent. Price/display dominates; meta copy stays quiet."
+    },
+    {
+      "id": "accent-job",
+      "rule": "Accent color appears on one job only — primary CTA, tier highlight, or gradient material. Never accent + accent + accent."
+    },
+    {
+      "id": "material-not-wallpaper",
+      "rule": "Gradients and mesh live in bounded zones (card header, hero band, type fill). Full-bleed decorative gradient = slop unless concept demands it."
+    },
+    {
+      "id": "contrast",
+      "rule": "Body text ≥ 4.5:1 on surface. Large display can be tighter but must stay readable. Muted meta ≥ 3:1 on white."
+    }
+  ],
+  "semanticTokens": {
+    "cssTemplate": ":root {\n  --surface: #fafaf9;\n  --surface-raised: #ffffff;\n  --ink: #0a0a0a;\n  --muted: #737373;\n  --border: #e5e5e5;\n  --accent: #0a0a0a;\n  --accent-soft: rgba(10, 10, 10, 0.08);\n}",
+    "notes": [
+      "Define tokens in :root — avoid raw hex scattered in components",
+      "Warm SaaS: surface #fafaf9, muted #78716c. Cool SaaS: surface #f8fafc, muted #64748b",
+      "One accent hue max — CTA can be ink-on-white or saturated single hue, not both fighting"
+    ]
+  },
+  "patternsByPageType": {
+    "pricing": {
+      "label": "Premium pricing / plan card",
+      "palette": "White or warm off-white card · warm/cool gray meta · black or brand single-hue CTA · mesh or soft gradient in header band only",
+      "do": [
+        "Large price typography — hierarchy through size/weight",
+        "Mesh or gradient confined to card header / tier name zone",
+        "Thin line icons or restrained checkmarks — not purple bullet lists",
+        "Soft shadow on card + crisp primary button",
+        "Secondary text one step quieter (--muted)"
+      ],
+      "avoid": [
+        "Three identical glass cards in a row",
+        "Full-page purple gradient behind cards",
+        "Rainbow feature icons",
+        "Fake 'Most popular' pill on every tier"
+      ]
+    },
+    "hero": {
+      "label": "Hero / landing moment",
+      "palette": "One atmospheric field OR monochrome + one accent · not orb + mesh + glow stack",
+      "do": ["Committed color world tied to product metaphor", "CTA contrast obvious", "Display type carries color if needed"],
+      "avoid": ["Purple blob behind centered Inter headline", "Split SaaS copy + decorative orb"]
+    },
+    "portfolio": {
+      "label": "Portfolio / editorial",
+      "palette": "Paper + ink · one accent on links or section labels · no gold-on-black template",
+      "do": ["Whitespace as color", "Understated borders", "Hover surface shift (--accent-soft)"],
+      "avoid": ["Dark zinc + lime accent dev console", "Decorative gradient heroes"]
+    },
+    "auth": {
+      "label": "Auth / OTP",
+      "palette": "Near-neutral field · atmosphere shifts on focus — hue tied to progress, not static wallpaper",
+      "do": ["Ghost inputs on tinted field", "Focus ring with purpose"],
+      "avoid": ["Static full-page gradient with dead form"]
+    },
+    "default": {
+      "label": "General premium UI",
+      "palette": "Tinted neutrals + one accent + optional one material zone",
+      "do": ["Semantic CSS tokens", "Value hierarchy", "Contained material moments"],
+      "avoid": ["Template purple gradients", "Every section a new hue"]
+    }
+  },
+  "vaguePrompts": [
+    {
+      "id": "pricing-vague",
+      "match": "pricing|price card|plan card|subscription|tier|billing",
+      "pageType": "pricing",
+      "expansion": "Premium single-tier or comparison pricing — white/off-white card, warm gray secondary text, mesh or soft gradient header band only (Framer-level restraint), tier title with top breathing room in header, billing toggle with body top padding (not flush to header seam), Monthly before Annual in toggle order, large price typography, thin line feature icons, one black or brand primary CTA, soft card shadow, annual/monthly toggle with NumberFlow digit morph on price change, meta line crossfade, CTA press feedback"
+    },
+    {
+      "id": "hero-vague",
+      "match": "hero|landing|homepage|above the fold",
+      "pageType": "hero",
+      "expansion": "Premium hero — one visual metaphor, tinted neutrals, one accent CTA, display type hierarchy, asymmetric layout, material moment confined to one zone — not centered Inter + purple blob"
+    },
+    {
+      "id": "404-vague",
+      "match": "404|not found|error page",
+      "pageType": "404",
+      "expansion": "Creative 404 — one sharp concept, committed color world, memorable escape path, senior creative courage — not stock clipart on gray"
+    },
+    {
+      "id": "portfolio-vague",
+      "match": "portfolio|personal site|showcase my work",
+      "pageType": "portfolio",
+      "expansion": "Editorial portfolio — paper + ink neutrals, narrow column, list rhythm, one hover preview moment, system UI body — not dark dev-console template"
+    },
+    {
+      "id": "auth-vague",
+      "match": "login|sign in|otp|password|auth",
+      "pageType": "auth",
+      "expansion": "Task-focused auth — tinted neutral field, atmosphere responds to input focus, clear hierarchy, one accent on primary action"
+    },
+    {
+      "id": "card-vague",
+      "match": "card ui|ui card|component card",
+      "pageType": "landing",
+      "expansion": "Premium card component — semantic neutrals, one material header or accent edge, soft elevation, clear typographic hierarchy, restrained color"
+    },
+    {
+      "id": "payment-vague",
+      "match": "payment card|pay with card|checkout card|credit card|card form|billing form",
+      "pageType": "auth",
+      "expansion": "Premium checkout payment card — live plastic preview mirrors typed digits/name/expiry, chip glow on number focus, semantic warm neutrals, mesh gradient on card face only, sans-first typography (Source Sans 3 or similar — not Inter/Geist, no editorial serif headline), stable pay button hover, focus-visible on all fields, encrypted helper line"
+    },
+    {
+      "id": "bento-travel-vague",
+      "match": "bento|travel app|trip preview|trip board|ourtravel|destination card",
+      "pageType": "landing",
+      "expansion": "Premium bento board — asymmetric fixed grid, hero tile with bundled local photo (never dead hotlink URLs), inline hover preview inside the hero card, warm semantic neutrals, distinctive display pairing (not Inter/Geist/SF Pro), mini stat tiles, one gradient material zone max, stable hovers without layout shift"
+    }
+  ],
+  "defaultVagueExpansion": "Premium UI with tinted neutral palette, semantic color tokens, one accent with a clear job, hierarchy through value and type scale, one contained material moment — senior product craft, not template slop"
+}

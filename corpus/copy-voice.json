@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "rules": [
+    "UI copy uses periods or commas. Do not chain clauses with em dashes.",
+    "Max one em dash (—) in all visible UI copy combined. Zero is better.",
+    "Status and success lines: short sentence. Example: \"Link sent. Check inbox.\" not \"Link sent — check inbox.\"",
+    "Hero subcopy: one idea per sentence. No \"Build X — ship Y — scale Z\" rhythm.",
+    "CTAs are verbs or verb phrases without em dashes: \"Send link\", not \"Send link — free\".",
+    "Reserve em dashes for rare `<title>` separators only if the product voice demands it."
+  ],
+  "slopPatterns": [
+    "Multiple em dashes in body copy (AI brochure rhythm)",
+    "Subtitle chain: three clauses separated by em dashes",
+    "CTA or status line with em dash punchline"
+  ],
+  "goodExamples": [
+    "We'll send one link. Then you choose a new password.",
+    "Ready",
+    "Link sent. Check your inbox."
+  ],
+  "badExamples": [
+    "Build faster — ship smarter — scale infinitely",
+    "Link sent — check inbox",
+    "Ink rises as credentials align — the gate is typographic, not decorative."
+  ]
+}

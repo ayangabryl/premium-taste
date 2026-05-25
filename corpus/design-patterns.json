@@ -1,0 +1,70 @@
+{
+  "patterns": [
+    {
+      "id": "auth-focus",
+      "name": "Auth / OTP focus",
+      "signals": ["otp", "2fa", "authentication", "verify", "passcode", "pin code", "login code", "authenticator"],
+      "pageTypes": ["auth", "empty-state"],
+      "tasteId": "expressive",
+      "techniqueIds": ["dither-atmosphere", "grain-atmosphere"],
+      "conceptHint": "One task, one screen — atmosphere responds to digit focus and entry, not a static wallpaper.",
+      "interaction": ["Digit focus shifts glow hue", "Auto-advance + paste", "Subtle ambient motion on field"],
+      "avoid": ["Static full-screen texture with dead UI", "Hero sections", "Scrub drag", "Decorative copy"]
+    },
+    {
+      "id": "dev-blueprint",
+      "name": "Developer blueprint",
+      "signals": ["framework", "docs", "documentation", "api", "developer", "tailwind", "utility", "sdk", "cli"],
+      "pageTypes": ["landing", "hero"],
+      "tasteId": "blueprint",
+      "techniqueIds": ["blueprint-grid", "code-live-preview", "meta-labels"],
+      "conceptHint": "Grid lines + meta labels — product proves itself (code beside live preview).",
+      "interaction": ["Search or tab focus", "Code/preview sync highlight"],
+      "avoid": ["Purple gradient blob hero", "Stock illustration", "Orb nodes"]
+    },
+    {
+      "id": "personal-editorial",
+      "name": "Personal editorial",
+      "signals": ["portfolio", "resume", "about me", "freelance", "designer", "personal site", "cv"],
+      "pageTypes": ["portfolio"],
+      "tasteId": "editorial",
+      "techniqueIds": ["editorial-lists", "hover-preview-panel", "narrow-measure"],
+      "conceptHint": "Quiet lists, whitespace, one hover moment — SF Pro discipline.",
+      "interaction": ["Hover preview per row", "Underline links"],
+      "avoid": ["Dark scrub hero", "Gold on black template"]
+    },
+    {
+      "id": "marketing-spectacle",
+      "name": "Marketing spectacle",
+      "signals": ["launch", "campaign", "product hero", "startup", "saas", "convert", "waitlist"],
+      "pageTypes": ["hero", "landing"],
+      "tasteId": "spectacle",
+      "techniqueIds": ["type-as-image", "scroll-choreography", "interactive-surface"],
+      "conceptHint": "One bold visual metaphor — type or geometry at courage scale.",
+      "interaction": ["Scroll or pointer affects visuals"],
+      "avoid": ["Template split SaaS", "Pill CTA as entire page"]
+    },
+    {
+      "id": "pricing-restraint",
+      "name": "Pricing restraint",
+      "signals": ["pricing", "plans", "tiers", "billing", "subscription"],
+      "pageTypes": ["pricing"],
+      "tasteId": "spectacle",
+      "techniqueIds": ["type-as-image", "editorial-asymmetry", "generative-geometry"],
+      "conceptHint": "Type-led tiers — hierarchy without three identical glass cards.",
+      "interaction": ["Hover emphasis on featured tier"],
+      "avoid": ["Three identical glass cards", "Purple checkmarks"]
+    },
+    {
+      "id": "error-play",
+      "name": "404 play",
+      "signals": ["404", "not found", "lost", "missing", "error page"],
+      "pageTypes": ["404"],
+      "tasteId": "spectacle",
+      "techniqueIds": ["generative-geometry", "functional-play", "type-as-image"],
+      "conceptHint": "Memorable error moment — concept + custom surface.",
+      "interaction": ["Game, drag, or pointer play"],
+      "avoid": ["Stock 404 clipart", "Centered icon stack"]
+    }
+  ]
+}

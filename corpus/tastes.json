@@ -1,0 +1,191 @@
+{
+  "tastes": [
+    {
+      "id": "spectacle",
+      "label": "Spectacle",
+      "tagline": "Senior creative courage — monumental type, motion, interactive surfaces",
+      "typographyDirection": "Monumental display voice — condensed grotesk, stretched sans, stencil, or intentional serif only when type IS the visual (404/hero). Not default for checkout, auth, or pricing forms.",
+      "fontPolicy": "custom-display",
+      "motionRequired": true,
+      "gsapRequired": true,
+      "interactionDefaults": [
+        "Pointer or scroll affects at least one visual layer",
+        "GSAP entrance stagger on load",
+        "Solid scrub if drag mechanic fits the product metaphor"
+      ],
+      "techniqueIds": [
+        "type-as-image",
+        "generative-geometry",
+        "interactive-surface",
+        "editorial-asymmetry",
+        "scroll-choreography"
+      ],
+      "verifyProfile": "hero",
+      "juryWeights": {
+        "interaction": 25,
+        "typography": 15,
+        "colorMaterial": 20,
+        "motion": 15,
+        "layout": 15,
+        "concept": 10
+      },
+      "goalHint": "One bold visual idea at senior creative bar — not a SaaS template.",
+      "stealList": [
+        "Monumental type or generative geometry",
+        "One committed color field",
+        "Motion with purpose — entrance + ambient",
+        "Interaction that changes visuals"
+      ],
+      "antiPatterns": [
+        "Centered Inter + purple gradient blob",
+        "Split SaaS hero with orb nodes",
+        "Pill CTA as the hero",
+        "Decorating because empty space feels scary"
+      ]
+    },
+    {
+      "id": "editorial",
+      "label": "Editorial restraint",
+      "tagline": "Quiet portfolio craft — system UI, lists, whitespace, hover reveals",
+      "typographyDirection": "System UI for body (SF Pro, -apple-system, BlinkMacSystemFont) + ONE expressive accent for section labels (handwritten, serif italic, or mono). Hierarchy through size and weight, not decoration.",
+      "fontPolicy": "system-ok",
+      "motionRequired": false,
+      "gsapRequired": false,
+      "interactionDefaults": [
+        "One signature micro-interaction per section (hover preview, expand, subtle reveal)",
+        "List rows with right-aligned meta (date, view, year)",
+        "Focus-visible on every link",
+        "CSS transitions OK — GSAP optional"
+      ],
+      "techniqueIds": [
+        "editorial-lists",
+        "hover-preview-panel",
+        "bookshelf-carousel",
+        "grain-atmosphere",
+        "narrow-measure"
+      ],
+      "verifyProfile": "editorial",
+      "juryWeights": {
+        "interaction": 15,
+        "typography": 25,
+        "colorMaterial": 20,
+        "motion": 10,
+        "layout": 20,
+        "concept": 10
+      },
+      "goalHint": "Feels Apple-editorial — reduction, breathing room, one hover moment per block. Pleasing without spectacle.",
+      "stealList": [
+        "Narrow centered column with huge margins",
+        "Section labels with personality contrast",
+        "Lists with perfect left/right alignment",
+        "Hover preview card or expand — not page-wide scrub",
+        "Grain or soft shadow on one accent surface"
+      ],
+      "antiPatterns": [
+        "Dark full-bleed hero with scrub interaction",
+        "Forcing custom display font when system UI is correct",
+        "GSAP entrance on every element",
+        "Feature grid or three icon columns",
+        "Gold-on-black template premium"
+      ]
+    },
+    {
+      "id": "minimal",
+      "label": "Minimal",
+      "tagline": "Typographic silence — almost nothing on screen",
+      "typographyDirection": "One type family, two weights max. Silence is the concept. Links as underlines.",
+      "fontPolicy": "system-ok",
+      "motionRequired": false,
+      "gsapRequired": false,
+      "interactionDefaults": [
+        "Hover opacity or underline only",
+        "No ambient loops",
+        "Keyboard navigation clean"
+      ],
+      "techniqueIds": ["narrow-measure", "editorial-lists", "monochrome-discipline"],
+      "verifyProfile": "editorial",
+      "juryWeights": {
+        "interaction": 10,
+        "typography": 30,
+        "colorMaterial": 25,
+        "motion": 5,
+        "layout": 20,
+        "concept": 10
+      },
+      "goalHint": "3 elements max. Every pixel must earn its place.",
+      "stealList": ["Extreme whitespace", "Monochrome", "Underline links", "No hero image unless essential"],
+      "antiPatterns": ["Any decorative gradient", "Illustration for filler", "Motion for motion's sake"]
+    },
+    {
+      "id": "expressive",
+      "label": "Expressive",
+      "tagline": "Personality-forward — accent type, color pops, still disciplined structure",
+      "typographyDirection": "Sans body + one small accent voice max (mono digits, script section label). No variable serif on form headlines or checkout titles.",
+      "fontPolicy": "mixed",
+      "motionRequired": false,
+      "gsapRequired": false,
+      "interactionDefaults": [
+        "Hover reveals with character",
+        "Accent color on one surface only",
+        "Section personality without clutter"
+      ],
+      "techniqueIds": [
+        "editorial-lists",
+        "hover-preview-panel",
+        "grain-atmosphere",
+        "type-as-image"
+      ],
+      "verifyProfile": "creative",
+      "juryWeights": {
+        "interaction": 18,
+        "typography": 22,
+        "colorMaterial": 20,
+        "motion": 12,
+        "layout": 18,
+        "concept": 10
+      },
+      "goalHint": "Memorable voice — handwritten sections, bookshelf, experiment previews — structured, not chaotic.",
+      "stealList": [
+        "Expressive section headers vs clean body",
+        "One saturated accent",
+        "Curated objects (books, artifacts)",
+        "Preview-on-hover for experiments"
+      ],
+      "antiPatterns": ["Rainbow palette", "Every section a different font", "Noise without structure"]
+    },
+    {
+      "id": "blueprint",
+      "label": "Developer blueprint",
+      "tagline": "Grid-as-design — meta labels, code + preview, atmospheric glow",
+      "typographyDirection": "Clean sans (Inter, SF Pro) + mono for code. Meta labels show tokens/classes used on the page itself.",
+      "fontPolicy": "system-ok",
+      "motionRequired": false,
+      "gsapRequired": false,
+      "interactionDefaults": [
+        "Visible grid lines as layout system",
+        "Code panel beside live preview",
+        "Soft glow as depth layer — not the whole hero",
+        "Search or focus states with purpose"
+      ],
+      "techniqueIds": ["blueprint-grid", "code-live-preview", "meta-labels", "grain-atmosphere"],
+      "verifyProfile": "creative",
+      "juryWeights": {
+        "interaction": 18,
+        "typography": 20,
+        "colorMaterial": 18,
+        "motion": 10,
+        "layout": 24,
+        "concept": 10
+      },
+      "goalHint": "Product-native layout — Tailwind-style blueprint grid, self-documenting UI, proof in the demo.",
+      "stealList": [
+        "Visible grid + hatch corners",
+        "Meta labels (classes/tokens above elements)",
+        "Code left, rendered preview right",
+        "One cyan accent on near-black",
+        "Smooth glow behind grid — atmosphere only"
+      ],
+      "antiPatterns": ["Purple mesh hero", "Orb illustration", "Grid dots as fake decoration without structure"]
+    }
+  ]
+}
