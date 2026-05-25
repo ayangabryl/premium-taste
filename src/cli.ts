@@ -1,4 +1,3 @@
-#!/usr/bin/env bun
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { briefToMarkdown, buildBrief } from "./brief";
@@ -259,8 +258,8 @@ function printHelp(): void {
   console.log(`${PRODUCT_NAME} — one-prompt senior UI for AI agents (v${PRODUCT_VERSION})
 
 Quick start:
-  skills install                    Install agent skill (Cursor, Claude, Codex…)
-  design -p "your words"            Brief + discovery + playbook
+  skills install                    npx skills add ayangabryl/premium-taste --skill premium-taste -g -y
+  design -p "your words"            Brief + discovery (requires linked CLI)
   design -p "same" --url <url> --skip-brief   Verify + jury
 
 Commands:
@@ -275,8 +274,8 @@ Commands:
   jury      Weighted score (reads ${DEFAULT_BRIEF_DIR}/brief.json)
 
 Examples:
-  npx ${CLI_NAME} skills install
-  npx ${CLI_NAME} design -p "Framer-style pricing card with billing toggle"
+  npx skills add ayangabryl/premium-taste --skill premium-taste -g -y
+  ${CLI_NAME} design -p "Framer-style pricing card with billing toggle"
   npx ${CLI_NAME} design -p "404 for a kids book publisher"
   npx ${CLI_NAME} design -p "OurTravel bento with preview in the card" --url http://127.0.0.1:3000/travel --skip-brief
 

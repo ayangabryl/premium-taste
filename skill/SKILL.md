@@ -18,13 +18,16 @@ The user does **not** run CLI, pick page types, know NumberFlow, or read corpus 
 
 ## Setup
 
+**Skill (user runs once):**
+
 ```bash
-npx premium-taste skills install
+npx skills add ayangabryl/premium-taste --skill premium-taste -g -y
 ```
 
-For verify/jury (first time only):
+**CLI (you need this for design/verify/jury — clone once per machine if not linked):**
 
 ```bash
+git clone https://github.com/ayangabryl/premium-taste.git && cd premium-taste && bun install && bun link
 npx playwright install chromium
 ```
 
@@ -46,7 +49,7 @@ Examples (pass exact words):
 From the **project root**:
 
 ```bash
-npx premium-taste design -p "<user's exact words>"
+premium-taste design -p "<user's exact words>"
 ```
 
 Writes `.premium-taste/brief.json`, `brief.md`, `discovery.md` + prints **Senior micro** + **6 build phases**.
@@ -72,14 +75,14 @@ Read `.premium-taste/brief.md` — **Senior micro** section first.
 ## Step 4 — Score
 
 ```bash
-npx premium-taste design -p "<same words>" --url <url> --skip-brief
+premium-taste design -p "<same words>" --url <url> --skip-brief
 ```
 
 Or:
 
 ```bash
-npx premium-taste verify <url>
-npx premium-taste jury <url> --md .premium-taste/jury.md
+premium-taste verify <url>
+premium-taste jury <url> --md .premium-taste/jury.md
 ```
 
 ---
@@ -107,7 +110,7 @@ If not scored yet: `Verify: not run` / `Jury: not run`.
 ## Redesign mode
 
 1. Find target file/route in the project  
-2. `npx premium-taste design -p "Redesign src/.../Login.tsx: warmer, keep form logic"`  
+2. `premium-taste design -p "Redesign src/.../Login.tsx: warmer, keep form logic"`  
 3. Edit **in place** — same route, same actions  
 
 ---

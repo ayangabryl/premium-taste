@@ -4,35 +4,32 @@
 
 ---
 
-## Quick start
+## Install
 
 ```bash
-npx premium-taste skills install
-npx premium-taste design -p "pricing card with annual toggle"
+npx skills add ayangabryl/premium-taste --skill premium-taste -g -y
 ```
 
 Trigger in Cursor / Claude: **`/premium-taste`** or **“premium taste pricing card”**
 
-First verify/jury run:
-
-```bash
-npx playwright install chromium
-npx premium-taste design -p "pricing card with annual toggle" --url http://127.0.0.1:3000/pricing --skip-brief
-```
-
 ---
 
-## Commands
+## CLI (verify + jury)
 
-| Command | Purpose |
-|---|---|
-| `skills install` | Install agent skill |
-| `design -p "…"` | Brief + discovery |
-| `design -p "…" --url <url> --skip-brief` | Verify + jury |
-| `verify <url>` | Craft checklist |
-| `jury <url>` | Score /100 (ship ≥75) |
+Clone once, then use from any project:
 
-Always report **Verify · Jury · Human** scores.
+```bash
+git clone https://github.com/ayangabryl/premium-taste.git
+cd premium-taste && bun install && bun link
+npx playwright install chromium
+```
+
+Then in your app:
+
+```bash
+premium-taste design -p "pricing card with annual toggle"
+premium-taste design -p "pricing card with annual toggle" --url http://127.0.0.1:3000/pricing --skip-brief
+```
 
 ---
 
@@ -43,8 +40,9 @@ pricing card with annual toggle
 create a payment card
 OurTravel bento card with trip preview inside the tile
 404 for a podcast app
-redesign the login page — warmer, less template
 ```
+
+Always report **Verify · Jury · Human** scores.
 
 ---
 

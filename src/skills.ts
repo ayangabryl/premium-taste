@@ -2,7 +2,7 @@ import { execSync } from "node:child_process";
 import { existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { homedir } from "node:os";
-import { CLI_NAME, PRODUCT_NAME, SKILL_NAME, SKILL_REPO } from "./constants";
+import { CLI_NAME, PRODUCT_NAME, SKILL_INSTALL_CMD, SKILL_NAME, SKILL_REPO } from "./constants";
 
 const PROVIDER_DIRS = [
   ".agents",
@@ -31,19 +31,21 @@ function isSkillInstalled(root: string): boolean {
 }
 
 function runSkillsAdd(yes: boolean): void {
-  execSync(`npx skills add ${SKILL_REPO} --copy${yes ? " -y" : ""}`, { stdio: "inherit" });
+  execSync(`npx skills add ${SKILL_REPO} --skill ${SKILL_NAME} --copy${yes ? " -y" : ""}`, { stdio: "inherit" });
 }
 
 export function cmdSkillsHelp(): number {
   console.log(`${PRODUCT_NAME} skills
 
-  skills install [--force] [-y]   Install agent skill into this project
+Install (recommended — works without npm publish):
+  ${SKILL_INSTALL_CMD}
+
+From this repo (dev only):
+  bun run src/cli.ts skills install
+
+  skills install [--force] [-y]   Same as npx skills add (project copy)
   skills update [-y]              Reinstall latest skill
   skills help                     Show this help
-
-Quick start:
-  npx ${CLI_NAME} skills install
-  npx ${CLI_NAME} design -p "pricing card with annual toggle"
 `);
   return 0;
 }
@@ -62,7 +64,7 @@ export function cmdSkills(args: string[]): number {
 
     if (isSkillInstalled(root) && !force) {
       console.log(`${PRODUCT_NAME} skill already installed.`);
-      console.log("Run `npx premium-taste skills update` to refresh.\n");
+      console.log(`Refresh: ${SKILL_INSTALL_CMD}\n`);
       return 0;
     }
 
@@ -77,12 +79,12 @@ export function cmdSkills(args: string[]): number {
 
     console.log("");
     console.log(`Done! Use /${SKILL_NAME} or say "premium taste pricing card".`);
-    console.log(`Score builds: npx ${CLI_NAME} design -p "..." --url <url> --skip-brief`);
-    console.log("First verify/jury run: npx playwright install chromium\n");
+    console.log(`CLI: clone repo, bun install, bun link — then ${CLI_NAME} design -p "..."`);
+    console.log("Verify/jury: npx playwright install chromium\n");
     return 0;
   }
 
   console.error(`Unknown skills command: ${sub}`);
-  console.error(`Run 'npx ${CLI_NAME} skills help' for available commands.`);
+  console.error(`Run '${CLI_NAME} skills help' for available commands.`);
   return 1;
 }

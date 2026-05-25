@@ -1,12 +1,16 @@
 # Setup
 
+## Skill
+
 ```bash
-npx premium-taste skills install
+npx skills add ayangabryl/premium-taste --skill premium-taste -g -y
 ```
 
-Verify/jury (once):
+## CLI (brief, verify, jury)
 
 ```bash
+git clone https://github.com/ayangabryl/premium-taste.git
+cd premium-taste && bun install && bun link
 npx playwright install chromium
 ```
 
@@ -14,5 +18,6 @@ npx playwright install chromium
 
 | Issue | Fix |
 |---|---|
-| Skill not triggering | `npx premium-taste skills update` |
+| Skill not triggering | Re-run `npx skills add … -g -y` |
+| `premium-taste: command not found` | Run `bun link` inside cloned repo |
 | Playwright browser missing | `npx playwright install chromium` |

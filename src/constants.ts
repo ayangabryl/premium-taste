@@ -7,6 +7,7 @@ export const LEGACY_CLI_NAME = "premiumref";
 export const PRODUCT_VERSION = "1.0.0";
 export const SKILL_REPO = "ayangabryl/premium-taste";
 export const SKILL_NAME = "premium-taste";
+export const SKILL_INSTALL_CMD = `npx skills add ${SKILL_REPO} --skill ${SKILL_NAME} -g -y`;
 
 export const DEFAULT_BRIEF_DIR = ".premium-taste";
 export const LEGACY_BRIEF_DIR = ".premiumref";

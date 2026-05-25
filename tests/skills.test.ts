@@ -1,8 +1,9 @@
 import { describe, expect, test } from "bun:test";
+import { SKILL_INSTALL_CMD } from "../src/constants";
 import { cmdSkillsHelp } from "../src/skills";
 
 describe("premium-taste skills", () => {
-  test("skills help mentions install", () => {
+  test("skills help mentions npx skills add install", () => {
     const lines: string[] = [];
     const orig = console.log;
     console.log = (...args: unknown[]) => {
@@ -14,7 +15,7 @@ describe("premium-taste skills", () => {
       console.log = orig;
     }
     const out = lines.join("\n");
-    expect(out).toContain("skills install");
-    expect(out).toContain("npx premium-taste skills install");
+    expect(out).toContain("npx skills add");
+    expect(out).toContain(SKILL_INSTALL_CMD);
   });
 });
